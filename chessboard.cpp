@@ -1,5 +1,7 @@
 #include <chessboard.h>
 #include <QtGui>
+#include <global.h>
+
 
 
 ChessBoard::ChessBoard(QWidget *parent):
@@ -33,9 +35,9 @@ void ChessBoard::initLayout (){
           point[i][j]=new QPoint(origin->x ()+oneStepW*i,origin->y ()+oneStepH*j);
           chessman[i][j]->setParent (this);
           chessman[i][j]->move2 (point[i][j]);
-          if( player != sheep )
+          if(player != sheep )
             { // wolf up,sheep down,player is sheep, I like to be sheep so sheep is the default option.
-              tableCurrent[i][j]=tableWolf[i][j];
+             configure->tableCurrent[i][j]=configure->tableWolf[i][j];
             }
         }
     }
@@ -68,7 +70,7 @@ void ChessBoard::paintEvent (QPaintEvent *){
   //    }
   /// \endchapter
 
-  if(newGame == 0)
+  if(configure->newGame == 0)
     return;
   boardW=this->size ().width ();
   boardH=this->size ().height ();
@@ -90,7 +92,7 @@ void ChessBoard::paintEvent (QPaintEvent *){
           point[i][j]->setY(origin->y ()+oneStepH*i);
           chessman[i][j]->move2 (point[i][j]);
 
-          switch(tableCurrent[i][j]){
+          switch(configure->tableCurrent[i][j]){
             case wolf:
               chessman[i][j]->setText (trUtf8 ("Wolf"));//wolf here
               chessman[i][j]->resize (oneStepW/2,oneStepH/2);

@@ -1,13 +1,12 @@
 #include <game.h>
+#include <QApplication>
 
-extern Game *game;
 
 int main(int argc, char *argv[])
 {
-  int status=0;
+  QApplication *app = new QApplication(argc,argv);
+  Game *wolfAndSheep =new Game();
+  wolfAndSheep->initGame ();
 
-  game = new Game(argc,argv);
-  status = game->exec ();
-
-  return status;
+  return app->exec();
 }

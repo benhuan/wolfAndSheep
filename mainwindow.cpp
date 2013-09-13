@@ -2,7 +2,9 @@
 #include <QtGui>
 #include <chessboard.h>
 #include <game.h>
-extern Game * game;
+#include <global.h>
+
+
 
 MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent)
@@ -34,11 +36,8 @@ void MainWindow::initWindow (){
   toolbar->addAction(newAction);
   toolbar->setContextMenuPolicy (Qt::PreventContextMenu);//forbid toolbar's right click which can hide itself
   addToolBar (toolbar);
-
-  game->newGame = 1;
-  game->chessboard = new ChessBoard ();
-  this->setCentralWidget (game->chessboard);
-  this->resize (game->chessboard->size ().width (),game->chessboard->size ().height ()+50);
+  this->setCentralWidget (chessboard);
+  this->resize (chessboard->size ().width (),chessboard->size ().height ()+50);
 
 }
 

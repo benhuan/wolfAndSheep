@@ -16,12 +16,16 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     chessMan.cpp \
     game.cpp \
-    chessboard.cpp
+    chessboard.cpp \
+    configure.cpp \
+    global.cpp
 
 HEADERS  += mainwindow.h \
     chessMan.h \
     game.h \
-    chessboard.h
+    chessboard.h \
+    configure.h \
+    global.h
 
 RESOURCES += \
     image.qrc

@@ -1,6 +1,9 @@
 #include <chessMan.h>
-#include <global.h>
+#include <game.h>
 #include <QtGui>
+#include <global.h>
+
+
 
 ChessMan::ChessMan(QPushButton *parent):
   QPushButton(parent)
@@ -38,7 +41,7 @@ void ChessMan::chosen ()
       moving=1;
       this->setText ("TT");
       setMouseTracking (true);
-      centerWidget->setMouseTracking (true);
+      chessboard->setMouseTracking (true);
 
     }
   else
