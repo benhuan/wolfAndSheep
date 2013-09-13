@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/background">
+        <file>res/background/wood0.jpg</file>
+        <file>res/background/wood1.jpg</file>
+        <file>res/background/wood2.jpg</file>
+        <file>res/background/wood3.jpg</file>
+        <file>res/background/wood4.jpg</file>
+        <file>res/background/wood5.jpg</file>
+        <file>res/background/wood6.jpg</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>res/emotes/face-angel.png</file>
+        <file>res/emotes/face-cool.svg</file>
+        <file>res/emotes/face-embarrassed.png</file>
+        <file>res/emotes/face-kiss.png</file>
+        <file>res/emotes/face-laugh.png</file>
+        <file>res/emotes/face-plain.png</file>
+        <file>res/emotes/face-plain.svg</file>
+        <file>res/emotes/face-raspberry.png</file>
+        <file>res/emotes/face-red.svg</file>
+        <file>res/emotes/face-sad.png</file>
+        <file>res/emotes/face-sad.svg</file>
+        <file>res/emotes/face-smile.svg</file>
+        <file>res/emotes/face-smile-big.png</file>
+        <file>res/emotes/face-smile-big.svg</file>
+        <file>res/emotes/face-surprise.svg</file>
+        <file>res/emotes/face-uncertain.png</file>
+        <file>res/emotes/face-wink.png</file>
+        <file>res/emotes/face-wink.svg</file>
+        <file>res/emotes/face-smile.png</file>
+        <file>res/gnome-session-switch.png</file>
+    </qresource>
+</RCC>
